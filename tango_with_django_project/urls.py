@@ -24,4 +24,6 @@ url(r'^rango/', include('rango.urls')),
 # with rango/ to be handled by
 # the rango application
 url(r'^admin/', admin.site.urls),
+url(r'^about/', views.about, name='about'),
 ]
+
