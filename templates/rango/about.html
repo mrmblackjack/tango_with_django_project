@@ -4,19 +4,20 @@
 
 {% block body_block %}
 
-        <h1> Rango says...</h1>
+        
         <div>
-           Rango says here is the about page! <br />
-           <strong>{{ boldmessage }}</strong> <br />
+            Which page was this!? <br />
+            <strong>{{ boldmessage }}</strong><br />
         </div>
-        <div>
 
-            <img src="{% static "images/cat.jpg" %}"
-                 alt="Picture of a Cat"/>
+        <div>
+            <a href='/rango/'>Index</a><br />
+            <img src="{% static "images/about.jpg" %}"
+                 alt = "What is this aboot ?" />
+
         </div>
         <div>
-            
-            <img src="{{ MEDIA_URL}}cat.jpg" /> 
+             <img src="{{ MEDIA_URL}}cat.jpg" />
         </div>
 {% endblock %}
 
